@@ -1,7 +1,11 @@
 // Assignment code here
 // Creating 4 arrays
 
-var generatePassword = Function()
+var generatePassword = function(){
+
+}
+
+
 
 var specialCharacters = ['!','@','$','%','^','&','*','(',')','_','-',',','+',',','=']
 var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -11,27 +15,30 @@ var numbers = [1,2,3,4,5,6,7,8,9]
 var sumArray = [];
 var finalPassword = [];
 
-var upCaseQuestion = window.confirm("Would you like your password to have upper case letters")
+var upCaseQuestion = window.confirm("Would you like your password to have upper case letters");
 if(upCaseQuestion){
   finalPassword = finalPassword + upperCase;
+  console.log(upCaseQuestion)
 }
 
-
-var lowCaseQuestion = window.confirm("Would you like your password to have lower case letters")
+var lowCaseQuestion = window.confirm("Would you like your password to have lower case letters");
 if(lowCaseQuestion){
   finalPassword = finalPassword + lowerCase;
+  console.log(lowCaseQuestion)
 }
 
 
-var numQuestion = window.confirm("Would you like your password to have numbers")
+var numQuestion = window.confirm("Would you like your password to have numbers");
 if(numQuestion){
   finalPassword = finalPassword + numbers;
+  console.log(numQuestion)
 }
 
 
-var specialCharacterQuestion = window.confirm("Would you like your password to have special characters")
+var specialCharacterQuestion = window.confirm("Would you like your password to have special characters");
 if(specialCharacterQuestion){
   finalPassword = finalPassword + specialCharacters;
+console.log(specialCharacters)
 }
 
 
