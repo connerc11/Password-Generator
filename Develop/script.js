@@ -1,5 +1,5 @@
 // Assignment code here
-
+// cCreating 4 arrays
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
