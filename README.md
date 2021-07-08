@@ -5,4 +5,4 @@ This is a project with updated JavaScript code that generates a random password.
 ~The following is a link to the project:
 
 ~The following is an image of the project:
-![Get Started](./develop/readme.jpg)
+![Get Started](./Develop/readme.jpg)
