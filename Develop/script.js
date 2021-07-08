@@ -15,6 +15,7 @@ var passArra = []
 //this is an empty array, in order to combine all the characters
 var finalPassword = passArra
 
+//this is a function tht is providing window questions 
 function askQuestions() {
   //this is to confirm that they want upper case 
   var passLength = prompt("How many characters would you like?")
@@ -47,14 +48,12 @@ function askQuestions() {
     possCharacterarr = possCharacterarr.concat(specialCharacters);
     console.log(possCharacterarr)
   }
+  //this is to make sure that the questions are followed properly
   if (specialCharacterQuestion === false && numQuestion === false && lowCaseQuestion === false && upCaseQuestion === false) {
     alert("Must select one character type!");
     return askQuestions();
   }
-  // if (passLength === undefined){
-  //   alert("Please start over!");
-  //   return;
-  // }
+  
 
   var options = {
     passLength: passLength,
@@ -64,16 +63,7 @@ function askQuestions() {
   return options;
 }
 
-
-//work on for loop to generate the characters together (pseudo code)
-
-
-
-
-//var generateBtn = function(){
-//if(myChildren)
-//generate (finalPassword);
-
+//This will generate a random password based on the array
 function generatePassword() {
   var options = askQuestions();
   for (var i = 0; i < options.passLength; i++){
@@ -85,7 +75,6 @@ function generatePassword() {
   return passArra.join("")
 }
 
-// Get references to the #generate element
 
 // Write password to the #password input
 function writePassword(event) {
